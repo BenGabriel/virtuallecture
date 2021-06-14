@@ -1,0 +1,90 @@
+.adbackground {
+  width: 47%;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  background-image: url("../../images/40.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form-container {
+  width: 47%;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #cccccc;
+  padding: 20px 40px;
+}
+.form-container form,
+.form-container .newUser {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.form-container form h3 {
+  margin: 20px 5px;
+  font-weight: 400;
+}
+.student form h3 {
+  margin-top: 10px;
+}
+.form-container form input {
+  margin-top: 20px;
+  height: 35px;
+  border: 0.5px solid gray;
+  border-radius: 6px;
+  outline: none;
+  padding: 1px 5px;
+  width: 75%;
+}
+.form-container form select {
+  margin-top: 20px;
+  height: 35px;
+  border: 0.5px solid gray;
+  border-radius: 6px;
+  width: 35%;
+  outline: none;
+}
+button {
+  margin-top: 20px;
+  width: 23%;
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+  background-color: #0ba3e9;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container .newUser {
+  margin-top: 29px;
+}
+
+button .links {
+  text-decoration: none;
+  color: white;
+}
+
+.form-container .newUser h3 {
+  margin-top: 20px;
+}
+
+.form-container .newUser button {
+  margin-right: 70px;
+  padding: 10px;
+  width: 25%;
+}
+.clicktologin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.lecturer {
+  margin-top: 40px;
+}
+.clicktologin .p {
+  margin-top: 20px;
+  margin-right: 30px;
+  text-decoration: none;
+}
