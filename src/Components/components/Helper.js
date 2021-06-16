@@ -1,4 +1,5 @@
 import "./component.css";
+import "../Lecturer/lecturer.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -24,4 +25,31 @@ export const Toast = {
       pauseOnHover: false,
     });
   },
+};
+
+export const Div = (props) => {
+  return (
+    <div {...props} className="dashboard-div">
+      {props.children}
+    </div>
+  );
+};
+
+export const LecturerLeft = (props) => {
+  return (
+    <div {...props} className="leftside">
+      <h2>DASHBOARD</h2>
+      <p>Lecturer Activity Board</p>
+      {props.children}
+    </div>
+  );
+};
+export const StudentLeft = (props) => {
+  return (
+    <div {...props} className="student-leftside">
+      <h2>DASHBOARD</h2>
+      <p>Student Board</p>
+      {props.children}
+    </div>
+  );
 };

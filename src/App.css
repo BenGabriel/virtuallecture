@@ -3,3 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #1a8bd6;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+textarea {
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+input {
+  outline: none;
+  height: 35px;
+  padding: 10px;
+  border: 0.5px solid #cccccc;
+  border-radius: 6px;
+}

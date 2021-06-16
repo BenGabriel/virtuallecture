@@ -7,6 +7,8 @@ nav {
   color: wheat;
   background-color: #1a8bd6;
   padding: 0 40px;
+  width: 100%;
+  position: fixed;
 }
 nav h2 {
   font-size: 18px;
@@ -34,12 +36,18 @@ nav .nav-links {
   background-color: #0ba3e9;
 }
 .auth-container {
-  height: 84vh;
+  height: 92vh;
   /* border: 1px solid black; */
   width: 100%;
   padding: 30px;
+  padding-top: 80px;
   display: flex;
   justify-content: space-between;
+}
+.dashboard-div {
+  margin-left: 61px;
+  height: 84vh;
+  padding-top: 61px;
 }
 footer {
   background-color: #1a8bd6;
@@ -47,9 +55,123 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer p {
   text-align: center;
   color: white;
   font-size: 17px;
+}
+.sidebar {
+  background-color: #1a8bd6;
+  position: fixed;
+  left: 0px;
+  height: 84vh;
+  top: 8vh;
+  width: 60px;
+  transition: 0.5s;
+  transition-property: width;
+  z-index: 4;
+  border-top: 0.5px solid #cccccc;
+  border-bottom: 0.5px solid #cccccc;
+}
+#check:checked ~ .sidebar {
+  left: 0px;
+  width: 250px;
+}
+
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  margin: 75px 50px 15px;
+  position: relative;
+  left: -400px;
+  transition: 0.5s;
+  transition-property: left;
+}
+#check:checked ~ .sidebar img {
+  left: 0px;
+}
+#check {
+  display: none;
+}
+.sidebar div {
+  margin-top: 30px;
+}
+.sidebar li {
+  list-style-type: none;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 40px;
+  color: white;
+  height: 40px;
+}
+#check:checked ~ .sidebar .nav-class {
+  display: flex;
+  align-items: center;
+}
+#check:checked ~ .sidebar li {
+  margin-left: 0px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+.sidebar li:hover {
+  background-color: #1a8bd6aa;
+}
+
+/* .sidebar .back {
+  background-color: #bf30e9;
+} */
+.sidebar li span {
+  position: relative;
+  transition: 0.5s;
+  transition-property: left;
+  margin-left: 20px;
+  overflow: hidden;
+  display: none;
+}
+.sidebar li .nav-class {
+  font-size: 15px;
+}
+#check:checked ~ .sidebar li span {
+  display: inline-block;
+}
+.menu-icon {
+  display: none;
+}
+.sidebar label #side-btn {
+  color: #fff;
+  transition: 0.5;
+  transition-property: color;
+}
+
+.sidebar label #side-btn :hover {
+  color: #00d0ff;
+}
+
+.sidebar label {
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+#check:checked ~ .sidebar label {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  nav h2 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  nav .nav-links {
+    display: none;
+  }
+  footer p {
+    font-size: 14px;
+  }
 }

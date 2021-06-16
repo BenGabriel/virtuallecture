@@ -1,0 +1,389 @@
+.lecturer-dashboard {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  height: inherit;
+}
+.lecturer-dashboard > div {
+  width: 47%;
+  /* border: 1px solid black; */
+}
+.lecturer-dashboard .leftside,
+.lecturer-dashboard .rightside {
+  padding: 50px;
+
+  /* border: 1px solid black; */
+}
+.lecturer-dashboard .leftside > h2,
+.lecturer-dashboard .leftside > p {
+  margin-left: 30px;
+}
+.leftside .added-class {
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 3px #cccccc;
+  border-radius: 6px;
+  margin-top: 40px;
+  padding: 20px;
+  height: 60vh;
+  overflow: auto;
+}
+.leftside .added-class > div {
+  /* border: 1px solid black; */
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px #cccccc;
+  border-radius: 6px;
+  border-left: 3px solid #1a8bd6;
+}
+.leftside .added-class > div > p {
+  margin-bottom: 6px;
+}
+/* .lecturer-dashboard .rightside {
+  padding: 50px;
+} */
+.lecturer-dashboard .rightside > div {
+  box-shadow: 0px 0px 3px #cccccc;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 20px;
+  height: 65vh;
+  width: 90%;
+  overflow: auto;
+}
+.lecturer-dashboard .rightside form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.rightside form h3 {
+  text-align: center;
+}
+.rightside form label {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.rightside form input,
+.rightside form select {
+  height: 35px;
+  outline: none;
+  padding: 8px;
+  border-radius: 6px;
+  border: 0.5px solid #bdbdbd;
+}
+.rightside form .time {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.rightside form .time input {
+  width: 45%;
+}
+
+/*
+
+
+
+
+for message 
+
+
+
+
+
+
+*/
+
+.leftside .message-side {
+  box-shadow: 0px 0px 3px #cccccc;
+  border-radius: 6px;
+  margin-top: 40px;
+  padding: 20px;
+  height: 62vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leftside .message-side .btn {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.leftside .message-side button {
+  text-align: center;
+  margin-top: 0;
+  border-radius: 4px;
+  width: 40%;
+  font-size: 12px;
+  background-color: #051d2c;
+}
+
+.leftside .message-side .messages {
+  margin-top: 20px;
+  width: 95%;
+  height: 100%;
+  border-radius: 2px;
+  overflow: auto;
+  border-top: 0.5px solid #c2c2c2;
+}
+.message-side .messages > div {
+  margin: 20px;
+  padding: 16px;
+  box-shadow: 0px 0px 5px #cccccc;
+  border-radius: 6px;
+  border-left: 3px solid #1a8bd6;
+}
+
+.message-side .messages p {
+  font-size: 14px;
+}
+
+.rightside .create-message .btn {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+.rightside .create-message .btn button {
+  text-align: center;
+  margin-top: 0;
+  border-radius: 4px;
+  width: 40%;
+  font-size: 12px;
+  background-color: #051d2c;
+}
+
+/* 
+
+
+
+For addlecture 
+
+
+
+
+*/
+.addlecture-class {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  box-shadow: 0px 0px 5px #aaaaaa;
+  border-radius: 6px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.addlecture {
+  /* border: 1px solid black; */
+  padding: 30px 50px;
+  width: 45%;
+}
+.addlecture form {
+  display: flex;
+  flex-direction: column;
+}
+.addlecture form label {
+  margin: 20px 10px 10px;
+}
+.addlecture form input {
+  margin-bottom: 20px;
+}
+.addlecture:last-child {
+  margin-left: 30px;
+  overflow: auto;
+  /* border: 1px solid black; */
+}
+
+.addlecture:last-child .select-materialclass div {
+  /* border: 1px solid black; */
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 5px #cccccc;
+  border-radius: 6px;
+  border-left: 3px solid #1a8bd6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .lecturer-dashboard .leftside > h2,
+  .lecturer-dashboard .leftside > p {
+    font-size: 17px;
+  }
+  .leftside .added-class > div > p,
+  .leftside .added-class > div > b,
+  .leftside .added-class > div > i {
+    font-size: 14px;
+  }
+  .leftside .added-class > div {
+    margin: 15px;
+    padding: 15px;
+  }
+  .lecturer-dashboard .rightside > div {
+    margin-top: 40px;
+    height: 65vh;
+    /* overflow: auto; */
+  }
+  .rightside form h3 {
+    font-size: 15px;
+  }
+  .rightside form label {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+
+  /*
+  addLecture
+  */
+
+  .addlecture h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .lecturer-dashboard > div {
+    width: 50%;
+  }
+  .lecturer-dashboard .leftside,
+  .lecturer-dashboard .rightside {
+    padding: 40px;
+  }
+  .addlecture {
+    /* border: 1px solid black; */
+    padding: 30px 20px;
+    width: 47%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .lecturer-dashboard .leftside,
+  .lecturer-dashboard .rightside {
+    padding: 20px;
+  }
+  .addlecture {
+    /* border: 1px solid black; */
+    padding: 30px 10px;
+    width: 47%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .lecturer-dashboard .leftside,
+  .lecturer-dashboard .rightside {
+    padding: 0px;
+    /* border: 1px solid black; */
+  }
+  .lecturer-dashboard {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+  }
+  .lecturer-dashboard > div {
+    width: 80%;
+    /* border: 1px solid black; */
+  }
+  .lecturer-dashboard .rightside > div {
+    width: 100%;
+    margin-bottom: 70px;
+    height: auto;
+  }
+  .lecturer-dashboard .leftside > h2,
+  .lecturer-dashboard .leftside > p {
+    font-size: 14px;
+  }
+
+  .rightside form h3 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .addlecture-class {
+    width: 70%;
+    margin: 40px auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .addlecture {
+    /* border: 1px solid black; */
+    padding: 30px;
+    width: 100%;
+  }
+  .addlecture:last-child {
+    margin-left: 0px;
+    border-top: 2px solid #cccccc;
+    margin-top: 30px;
+  }
+  .addlecture:last-child .select-materialclass {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .addlecture-class {
+    width: 90%;
+    margin: 40px auto 75px;
+  }
+  .addlecture-class h3,
+  .addlecture h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .lecturer-dashboard > div {
+    width: 90%;
+    /* border: 1px solid black; */
+  }
+  .leftside .added-class {
+    padding: 10px;
+  }
+  .leftside .added-class > div {
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 10px;
+  }
+
+  /*
+  
+  
+  for message
+
+
+  */
+  .leftside .message-side {
+    padding: 10px;
+    height: 65vh;
+  }
+
+  .leftside .message-side .btn {
+    width: 80%;
+  }
+  .leftside .message-side button {
+    width: 40%;
+    font-size: 10px;
+  }
+  .leftside .message-side .messages {
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+  .message-side .messages > div {
+    margin: 13px;
+    padding: 16px;
+
+    /* border: 1px solid black; */
+  }
+  .message-side .messages p {
+    font-weight: 400;
+  }
+  .rightside .create-message .btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+  }
+  .rightside .create-message .btn button {
+    width: 45%;
+    font-size: 11px;
+  }
+}

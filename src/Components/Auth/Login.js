@@ -27,8 +27,10 @@ const Login = (props) => {
     e.preventDefault();
     if (user.type === "student") {
       logStudent();
+      props.history.push("/student-dashboard");
     } else {
       logLecturer();
+      props.history.push("/dashboard");
     }
   };
 
@@ -43,6 +45,7 @@ const Login = (props) => {
       return Toast.error("Invalid Password");
     }
     localStorage.setItem("token", "hdkdiikdkkdookdlo");
+    localStorage.setItem("type", "student");
 
     // props.history.push("/");
   };
@@ -58,6 +61,7 @@ const Login = (props) => {
       return Toast.error("Invalid Password");
     }
     localStorage.setItem("token", "hdkdiikdkkdookdlo");
+    localStorage.setItem("type", "lecturer");
 
     // props.history.push("/");
   };
