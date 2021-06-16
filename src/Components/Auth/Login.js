@@ -36,6 +36,9 @@ const Login = (props) => {
 
   const logStudent = () => {
     const student = JSON.parse(localStorage.getItem("student"));
+    if (student === null || student === undefined) {
+      return Toast.error("Invalid Credentials");
+    }
     const { username, password } = student;
 
     if (user.username !== username) {
@@ -52,6 +55,9 @@ const Login = (props) => {
 
   const logLecturer = () => {
     const lecturer = JSON.parse(localStorage.getItem("lecturer"));
+    if (lecturer === null || lecturer === undefined) {
+      return Toast.error("Invalid Credentials");
+    }
     const { username, password } = lecturer;
 
     if (user.username !== username) {
