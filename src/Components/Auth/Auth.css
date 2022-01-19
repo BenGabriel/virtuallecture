@@ -1,0 +1,163 @@
+.adbackground {
+  width: 47%;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  background-image: url("../../images/40.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form-container {
+  width: 47%;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #cccccc;
+  padding: 20px 40px;
+  overflow: auto;
+}
+.form-container form,
+.form-container .newUser {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.form-container form h3 {
+  margin: 20px 5px;
+  font-weight: 400;
+}
+.student form h3 {
+  margin-top: 10px;
+}
+.form-container form input {
+  margin-top: 20px;
+  height: 35px;
+  border: 0.5px solid gray;
+  border-radius: 6px;
+  outline: none;
+  padding: 1px 5px;
+  width: 75%;
+}
+.form-container form select {
+  margin-top: 20px;
+  height: 35px;
+  border: 0.5px solid gray;
+  border-radius: 6px;
+  width: 35%;
+  outline: none;
+}
+button {
+  margin-top: 20px;
+  width: 23%;
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+  background-color: #104949;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container .newUser {
+  margin-top: 29px;
+}
+
+button .links {
+  text-decoration: none;
+  color: white;
+}
+
+.form-container .newUser h3 {
+  margin-top: 20px;
+}
+
+.form-container .newUser button {
+  margin-right: 70px;
+  padding: 10px;
+  width: 25%;
+}
+.clicktologin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.lecturer {
+  margin-top: 40px;
+}
+.clicktologin .p {
+  margin-top: 20px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+  button {
+    width: 43%;
+    font-size: 14px;
+  }
+  .form-container button {
+    font-size: 12px;
+  }
+  .form-container .newUser button {
+    margin-right: 0;
+    width: 40%;
+  }
+  .form-container .newUser-button {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 890px) {
+  .form-container form input {
+    width: 95%;
+  }
+  .form-container .newUser button {
+    margin-right: 0;
+    width: 45%;
+  }
+  .form-container form select {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .adbackground {
+    display: none;
+  }
+  .form-container {
+    width: 70%;
+    margin: auto;
+    height: 75vh;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    width: 33%;
+    font-size: 14px;
+  }
+  .form-container {
+    width: 90%;
+    padding: 20px 10px;
+  }
+  .form-container form input {
+    width: 100%;
+  }
+  .clicktologin .p {
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  button {
+    width: 50%;
+    font-size: 14px;
+  }
+}
