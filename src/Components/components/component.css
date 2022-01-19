@@ -30,11 +30,10 @@ nav .nav-links {
   padding-top: 9%;
 }
 .nav-links .nav-item:hover {
-  background-color: #078091;
+  background-color: #076a77;
 }
 .auth-container {
   height: 92vh;
-  /* border: 1px solid black; */
   width: 100%;
   padding: 30px;
   padding-top: 80px;
