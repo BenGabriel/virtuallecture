@@ -33,7 +33,7 @@ nav .nav-links {
   transition: all 0.5s;
 }
 .nav-links .nav-item:hover {
-  background-color: #0ba3e9;
+  background-color: #076a77;
 }
 .auth-container {
   height: 92vh;
